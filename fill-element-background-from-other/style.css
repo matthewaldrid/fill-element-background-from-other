@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.product {
+  width: 325px;
+  margin: 20px auto;
+  box-shadow: 0 0 30px #ddd;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.product .number {
+  background-color: #DB7093;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 26px;
+  transition: 1.5s;
+  border: 1px solid #fff;
+}
+.product h3 {
+  margin: 15px 0;
+  font-size: 26px;
+  transition: 0.6s;
+}
+.product p {
+  line-height: 1.6;
+  transition: 0.6s;
+  font-size: 18px;
+}
+.product:hover .number {
+  box-shadow: 0 0 0 500px #DB7093;
+}
+.product:hover h3,
+.product:hover p {
+  color: white;
+}
